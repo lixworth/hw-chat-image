@@ -18,7 +18,6 @@ function scrollToBottom() {
   const clientHeight = msg.value.clientHeight // 浏览器高度
   const scrollHeight = msg.value.scrollHeight // 总高度
   if (scrollHeight - 10 > currentScroll + clientHeight) {
-    window.requestAnimationFrame(smoothscroll)
     window.scrollTo(0, currentScroll + (scrollHeight - currentScroll - clientHeight) / 2)
   }
 }
